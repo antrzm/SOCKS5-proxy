@@ -27,29 +27,6 @@ public class Main {
     private static Map<SocketChannel, SocketChannel> clients = new HashMap<>();
     private static Map<SocketChannel, SocketChannel> servers = new HashMap<>();
 
-    static class Attachment {
-        /**
-         * Буфер для чтения, в момент проксирования становится буфером для
-         * записи для ключа хранимого в peer
-         * <p>
-         * ВАЖНО: При парсинге Socks4 заголовком мы предполагаем что размер
-         * буфера, больше чем размер нормального заголовка, у браузера Mozilla
-         * Firefox, размер заголовка равен 12 байт 1 версия + 1 команда + 2 порт +
-         * 4 ip + 3 id (MOZ) + 1 \0
-         */
-
-        ByteBuffer in;
-        /**
-         * Буфер для записи, в момент проксирования равен буферу для чтения для
-         * ключа хранимого в peer
-         */
-        ByteBuffer out;
-        /**
-         * Куда проксируем
-         */
-        SelectionKey peer;
-
-    }
 
     public static void main(String args[]) {
         if (args.length < 2) {
@@ -132,7 +109,8 @@ public class Main {
             }
         }
     }
-
+}
+/*
     static SocketChannel dstChannel;
 
     private static void accept(SelectionKey key) throws IOException {
@@ -272,4 +250,4 @@ public class Main {
             peerKey.interestOps(SelectionKey.OP_WRITE);
         }
     }
-}
+}*/
