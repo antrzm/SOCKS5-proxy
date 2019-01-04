@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="proxy" />
+      <artifact name="SOCKS-proxy:jar" />
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/handler/ClientChannelHandler.java" />
+    <bookmark url="file://$PROJECT_DIR$/src/ClientChannelHandler.java" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7250b551-5df3-4509-8702-ec12819e7c67" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/handler/ClientChannelHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClientChannelHandler.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,31 +22,28 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/SOCKS5_proxy$Main.ic" NAME="Main Coverage Results" MODIFIED="1546584366645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="111" column="1" selection-start-line="111" selection-start-column="1" selection-end-line="111" selection-end-column="1" />
+            <state relative-caret-position="561">
+              <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#accept#0;class#Main#0" />
-                <element signature="method#read#0;class#Main#0" />
-                <element signature="method#readHeader#0;class#Main#0" />
-                <element signature="method#write#0;class#Main#0" />
-                <element signature="method#connect#0;class#Main#0" />
-                <element signature="method#close#0;class#Main#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ClientChannelHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/handler/ClientChannelHandler.java">
+        <entry file="file://$PROJECT_DIR$/src/ClientChannelHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="40" column="71" selection-start-line="40" selection-start-column="71" selection-end-line="40" selection-end-column="71" />
+            <state relative-caret-position="221">
+              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,6 +66,14 @@
       <find>STAGE_REMOTE_CONNECTED</find>
       <find>port</find>
       <find>dnsSocket</find>
+      <find>remote</find>
+      <find>byteQueue</find>
+      <find>remotes</find>
+      <find>get</find>
+      <find>write</find>
+      <find>dns</find>
+      <find />
+      <find>COMMAND</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -76,8 +83,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/utils/PackageHeader.java" />
+        <option value="$USER_HOME$/Downloads/src/Socks.java" />
         <option value="$PROJECT_DIR$/src/handler/ClientChannelHandler.java" />
+        <option value="$USER_HOME$/Downloads/src/Client.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/ClientChannelHandler.java" />
       </list>
     </option>
   </component>
@@ -100,7 +110,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -109,11 +119,16 @@
               <item name="SOCKS5-proxy" type="b2602c69:ProjectViewProjectNode" />
               <item name="SOCKS5-proxy" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SOCKS5-proxy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SOCKS5-proxy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -133,7 +148,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -151,7 +166,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="SOCKS-proxy" />
-      <option name="PROGRAM_PARAMETERS" value="127.0.0.1 1080" />
+      <option name="PROGRAM_PARAMETERS" value="1080" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -218,11 +233,16 @@
       <workItem from="1545878756984" duration="12791000" />
       <workItem from="1546234620868" duration="705000" />
       <workItem from="1546235868143" duration="816000" />
+      <workItem from="1546513391421" duration="9661000" />
+      <workItem from="1546572489387" duration="8951000" />
+      <workItem from="1546586054229" duration="748000" />
+      <workItem from="1546593795843" duration="3945000" />
+      <workItem from="1546597964575" duration="731000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60105000" />
+    <option name="totallyTimeSpent" value="84141000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -237,19 +257,20 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.36" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13671875" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13671875" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3986207" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.3294271" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -266,35 +287,135 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>76</line>
-          <properties />
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="51" />
+      <option name="time" value="63" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ClientChannelHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1581">
+          <caret line="93" column="37" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ClientChannelHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1581">
+          <caret line="93" column="37" lean-forward="true" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ClientChannelHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ClientChannelHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="120" column="53" lean-forward="true" selection-start-line="120" selection-start-column="53" selection-end-line="120" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/src/Socks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2006">
+          <caret line="118" column="5" lean-forward="true" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/src/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2533">
+          <caret line="149" column="96" lean-forward="true" selection-start-line="149" selection-start-column="36" selection-end-line="149" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1887">
+          <caret line="111" column="1" selection-start-line="111" selection-start-column="1" selection-end-line="111" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ClientChannelHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="71" selection-start-line="40" selection-start-column="71" selection-end-line="40" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1598">
           <caret line="107" column="50" lean-forward="true" selection-start-line="107" selection-start-column="50" selection-end-line="107" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#accept#0;class#Main#0" />
-            <element signature="method#read#0;class#Main#0" />
-            <element signature="method#readHeader#0;class#Main#0" />
-            <element signature="method#write#0;class#Main#0" />
-            <element signature="method#connect#0;class#Main#0" />
-            <element signature="method#close#0;class#Main#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/handler/ClientChannelHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/ClientChannelHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="40" column="71" selection-start-line="40" selection-start-column="71" selection-end-line="40" selection-end-column="71" />
@@ -310,17 +431,11 @@
           <caret line="106" column="32" lean-forward="true" selection-start-line="106" selection-start-column="32" selection-end-line="106" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#accept#0;class#Main#0" />
-            <element signature="method#read#0;class#Main#0" />
-            <element signature="method#readHeader#0;class#Main#0" />
-            <element signature="method#write#0;class#Main#0" />
-            <element signature="method#connect#0;class#Main#0" />
-            <element signature="method#close#0;class#Main#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/handler/ClientChannelHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/ClientChannelHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="40" column="71" selection-start-line="40" selection-start-column="71" selection-end-line="40" selection-end-column="71" />
@@ -336,12 +451,6 @@
           <caret line="103" column="100" lean-forward="true" selection-start-line="103" selection-start-column="100" selection-end-line="103" selection-end-column="100" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#accept#0;class#Main#0" />
-            <element signature="method#read#0;class#Main#0" />
-            <element signature="method#readHeader#0;class#Main#0" />
-            <element signature="method#write#0;class#Main#0" />
-            <element signature="method#connect#0;class#Main#0" />
-            <element signature="method#close#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -360,7 +469,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/handler/ClientChannelHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/ClientChannelHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1955">
           <caret line="115" column="37" lean-forward="true" selection-start-line="115" selection-start-column="37" selection-end-line="115" selection-end-column="37" />
@@ -376,17 +485,11 @@
           <caret line="94" column="32" selection-start-line="94" selection-start-column="32" selection-end-line="94" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#accept#0;class#Main#0" />
-            <element signature="method#read#0;class#Main#0" />
-            <element signature="method#readHeader#0;class#Main#0" />
-            <element signature="method#write#0;class#Main#0" />
-            <element signature="method#connect#0;class#Main#0" />
-            <element signature="method#close#0;class#Main#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/handler/ClientChannelHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/ClientChannelHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="35" column="83" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="83" />
@@ -402,12 +505,6 @@
           <caret line="184" column="24" lean-forward="true" selection-start-line="184" selection-start-column="24" selection-end-line="185" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#accept#0;class#Main#0" />
-            <element signature="method#read#0;class#Main#0" />
-            <element signature="method#readHeader#0;class#Main#0" />
-            <element signature="method#write#0;class#Main#0" />
-            <element signature="method#connect#0;class#Main#0" />
-            <element signature="method#close#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -418,12 +515,6 @@
           <caret line="160" column="30" selection-start-line="160" selection-start-column="24" selection-end-line="160" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#accept#0;class#Main#0" />
-            <element signature="method#read#0;class#Main#0" />
-            <element signature="method#readHeader#0;class#Main#0" />
-            <element signature="method#write#0;class#Main#0" />
-            <element signature="method#connect#0;class#Main#0" />
-            <element signature="method#close#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -492,10 +583,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/handler/ClientChannelHandler.java">
+    <entry file="file://$USER_HOME$/Downloads/src/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="40" column="71" selection-start-line="40" selection-start-column="71" selection-end-line="40" selection-end-column="71" />
+        <state relative-caret-position="719">
+          <caret line="168" column="36" lean-forward="true" selection-start-line="168" selection-start-column="17" selection-end-line="168" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/src/Socks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="149" column="34" lean-forward="true" selection-start-line="149" selection-start-column="34" selection-end-line="149" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="241" column="21" selection-start-line="241" selection-start-column="21" selection-end-line="241" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="556" column="30" selection-start-line="556" selection-start-column="30" selection-end-line="556" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/nio/channels/spi/AbstractInterruptibleChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="106" column="22" selection-start-line="106" selection-start-column="22" selection-end-line="106" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ClientChannelHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -504,16 +630,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="111" column="1" selection-start-line="111" selection-start-column="1" selection-end-line="111" selection-end-column="1" />
+        <state relative-caret-position="561">
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#accept#0;class#Main#0" />
-            <element signature="method#read#0;class#Main#0" />
-            <element signature="method#readHeader#0;class#Main#0" />
-            <element signature="method#write#0;class#Main#0" />
-            <element signature="method#connect#0;class#Main#0" />
-            <element signature="method#close#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -524,7 +644,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>proxy</last-edited>
+          <last-edited>SOCKS-proxy:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -560,7 +680,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>Android API 27 Platform</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
