@@ -60,6 +60,9 @@ public class Main {
 
             startServer();
         } catch (IOException e) {
+            serverSocketChannel.close();
+            dnsChannel.close();
+            selector.close();
             e.printStackTrace();
             System.exit(-1);
         }
