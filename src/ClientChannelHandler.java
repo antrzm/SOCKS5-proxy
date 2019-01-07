@@ -206,6 +206,7 @@ class ClientChannelHandler {
     void destroy() {
         if (this.localSocketChannel != null) {
             try {
+                Main.clients.remove(this.localSocketChannel);
                 this.localSocketChannel.close();
             } catch (IOException e) {
                 e.printStackTrace();
@@ -214,6 +215,7 @@ class ClientChannelHandler {
 
         if (this.remoteSocketChannel != null) {
             try {
+                Main.remotes.remove(this.remoteSocketChannel);
                 this.remoteSocketChannel.close();
             } catch (IOException e) {
                 e.printStackTrace();

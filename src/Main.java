@@ -19,7 +19,7 @@ public class Main {
 
     static DatagramChannel dnsChannel;
 
-    private static Map<SocketChannel, ClientChannelHandler> clients = new HashMap<>();
+    static Map<SocketChannel, ClientChannelHandler> clients = new HashMap<>();
     static Map<SocketChannel, ClientChannelHandler> remotes = new HashMap<>();
     static HashMap<Integer, ClientChannelHandler> dns = new HashMap<>();
 
@@ -57,12 +57,15 @@ public class Main {
                 dnsChannel.connect(new InetSocketAddress("8.8.8.8", 53));
             }
             dnsChannel.register(selector, SelectionKey.OP_READ);
-
             startServer();
         } catch (IOException e) {
-            serverSocketChannel.close();
-            dnsChannel.close();
-            selector.close();
+            try {
+                serverSocketChannel.close();
+                dnsChannel.close();
+                selector.close();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
             e.printStackTrace();
             System.exit(-1);
         }
@@ -135,6 +138,9 @@ public class Main {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
+            for (SocketChannel channel : remotes.keySet()) {
+                channel.close();
+            }
             for (SocketChannel channel : clients.keySet()) {
                 channel.close();
             }
