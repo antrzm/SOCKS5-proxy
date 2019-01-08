@@ -11,8 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7250b551-5df3-4509-8702-ec12819e7c67" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SOCKS-proxy.jar" beforeDir="false" afterPath="$PROJECT_DIR$/SOCKS-proxy.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ClientChannelHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClientChannelHandler.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,7 +30,7 @@
           <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="138">
+                <state relative-caret-position="850">
                   <caret line="59" selection-start-line="59" selection-end-line="59" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -44,7 +42,7 @@
           <file leaf-file-name="ClientChannelHandler.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/ClientChannelHandler.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="274">
+                <state relative-caret-position="17">
                   <caret line="175" selection-start-line="175" selection-end-line="175" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -60,7 +58,7 @@
           <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
             <entry file="file://$USER_HOME$/Downloads/src/Client.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
+                <state relative-caret-position="1921">
                   <caret line="122" column="39" selection-start-line="122" selection-start-column="39" selection-end-line="122" selection-end-column="39" />
                 </state>
               </provider>
@@ -69,8 +67,8 @@
           <file leaf-file-name="Socks.java" pinned="false" current-in-tab="true">
             <entry file="file://$USER_HOME$/Downloads/src/Socks.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17">
-                  <caret line="137" column="43" selection-start-line="137" selection-start-column="43" selection-end-line="137" selection-end-column="43" />
+                <state relative-caret-position="459">
+                  <caret line="163" column="13" selection-start-line="163" selection-start-column="13" selection-end-line="163" selection-end-column="13" />
                   <folding>
                     <element signature="method#register#0;class#Socks#0" />
                     <element signature="method#getParams#0;class#Socks#0" />
@@ -140,27 +138,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="SOCKS5-proxy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOCKS5-proxy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SOCKS5-proxy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SOCKS5-proxy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
@@ -272,20 +250,19 @@
       <workItem from="1546877930136" duration="93000" />
       <workItem from="1546878054880" duration="1597000" />
       <workItem from="1546918443039" duration="2564000" />
-      <workItem from="1546930494851" duration="621000" />
+      <workItem from="1546930494851" duration="1321000" />
+      <workItem from="1546932851488" duration="390000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90234000" />
+    <option name="totallyTimeSpent" value="91324000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -293,7 +270,7 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -305,13 +282,14 @@
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3986207" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.3294271" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="7" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -748,15 +726,15 @@
     </entry>
     <entry file="file://$USER_HOME$/Downloads/src/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="1921">
           <caret line="122" column="39" selection-start-line="122" selection-start-column="39" selection-end-line="122" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Downloads/src/Socks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="137" column="43" selection-start-line="137" selection-start-column="43" selection-end-line="137" selection-end-column="43" />
+        <state relative-caret-position="459">
+          <caret line="163" column="13" selection-start-line="163" selection-start-column="13" selection-end-line="163" selection-end-column="13" />
           <folding>
             <element signature="method#register#0;class#Socks#0" />
             <element signature="method#getParams#0;class#Socks#0" />
@@ -767,7 +745,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
+        <state relative-caret-position="850">
           <caret line="59" selection-start-line="59" selection-end-line="59" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -777,7 +755,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ClientChannelHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
+        <state relative-caret-position="17">
           <caret line="175" selection-start-line="175" selection-end-line="175" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -791,7 +769,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>SOCKS-proxy:jar</last-edited>
+          <last-edited>SOCKS-proxy-java8:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -827,7 +805,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>1.8 (1)</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
