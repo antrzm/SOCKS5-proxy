@@ -68,7 +68,7 @@ class ClientChannelHandler {
         }
     }
 
-    void localRead() throws IOException {
+    void localRead() {
         ByteBuffer byteBuffer = ByteBuffer.allocate(BUFFER_SIZE);
         try {
             int bytes = localSocketChannel.read(byteBuffer);
@@ -149,10 +149,7 @@ class ClientChannelHandler {
             }
         } catch (IOException e) {
             this.destroy = true;
-            if (localSocketChannel.isConnected())
-                localSocketChannel.close();
-            if (remoteSocketChannel != null && remoteSocketChannel.isConnected())
-                remoteSocketChannel.close();
+            this.destroy();
         } finally {
             byteBuffer.clear();
         }
